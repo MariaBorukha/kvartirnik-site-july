@@ -1,9 +1,10 @@
 {
-  "_comment": "ЕДИНЫЙ ИСТОЧНИК ПРАВДЫ. Чтобы добавить новый квартирник — добавь один блок в начало массива events. Смотри PLAYBOOK.md.",
+  "_comment": "ЕДИНЫЙ ИСТОЧНИК ПРАВДЫ. Чтобы добавить новый квартирник — добавь один блок в начало массива events. Смотри PLAYBOOK.md. Сетлисты собраны из таблицы-программы (Google Sheets). Даты/места отмеченные (?) требуют подтверждения — см. DATA-STATUS.md.",
   "settings": {
     "telegram": "https://t.me/maybeemoi",
     "donate": "https://www.tinkoff.ru/cf/5ptRedZWPa4"
   },
+  "house_band": "Основной состав (house band): Мария Боруха — вокал, фортепиано; Андрей Суслов — вокал, гитара; Ростислав Ковалевский — гитара, вокал; Надя Петрова — вокал; Виктор Крыштапович — бас/гитара; Вероника Козырева — ударные; Михаил Лукашин; Сергей Чернявский — звук.",
   "events": [
     {
       "slug": "2026-05-tbd",
@@ -13,13 +14,25 @@
       "place": "Москва, БЦ Лотте",
       "place_note": "адрес появится ближе к мероприятию",
       "status": "upcoming",
-      "guests": "~40",
       "entry": "Бесплатно · донат приветствуется",
       "cover": "https://mariaborukha.github.io/kvartirnik-2/img/perf5.jpg",
       "photos": [],
       "songs": [],
       "gdrive": "",
       "register_url": ""
+    },
+    {
+      "slug": "2025-05-25",
+      "date": "2025-05-25",
+      "date_label": "25 мая 2025",
+      "title": "",
+      "place": "Москва",
+      "status": "past",
+      "cover": "",
+      "photos": [],
+      "performers": "Основной состав + приглашённые коллективы. Несколько блоков: Home Band, детский вокальный блок, авторские сеты гостей.",
+      "songs": ["Мой рок-н-ролл", "Звери — Колыбельная", "Наше лето — Ялта Парус", "Звёзды — Ума2рман"],
+      "gdrive": ""
     },
     {
       "slug": "2025-04-07",
@@ -30,7 +43,8 @@
       "status": "past",
       "cover": "https://mariaborukha.github.io/kvartirnik-2/img/ev3_1.jpg",
       "photos": ["https://mariaborukha.github.io/kvartirnik-2/img/ev3_1.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev3_2.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev3_3.jpg"],
-      "songs": [],
+      "performers": "Основной состав (house band).",
+      "songs": ["Зимний Сон — Алсу", "Hit the road, Jack!", "Вот увидишь — STERVELL", "Мой рок-н-ролл", "Где спит твоё сердце — Billy's Band", "Sunny — Boney M", "Вне зоны доступа", "Zombie — Cranberries", "Николай Носков — Снег", "Дайте танк (!) — Мы", "Imagine Dragons — Radioactive", "Бумбокс — Вахтёрам", "До скорой встречи — Звери", "Воздух на сигареты — Максим Свобода", "RHCP — Californication", "Fly me to the moon", "Меладзе — Салют, Вера", "Звёзды — Ума2рман", "All of me — John Legend", "Проститься — Ума2рман", "Creep — Radiohead", "Новые люди — Сплин", "Stand by me", "Ветер перемен", "Хочешь — Земфира", "Колыбельная медведицы", "Минутка красоты"],
       "gdrive": "https://drive.google.com/drive/folders/1oM1hvWIbe4rqjJ6Mb9dZ4d0n9gXiyQH5"
     },
     {
@@ -42,20 +56,75 @@
       "status": "past",
       "cover": "https://mariaborukha.github.io/kvartirnik-2/img/ev2_1.jpg",
       "photos": ["https://mariaborukha.github.io/kvartirnik-2/img/ev2_1.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev2_2.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev2_3.jpg"],
-      "songs": [],
+      "performers": "Основной состав (house band).",
+      "songs": ["Зимний Сон — Алсу", "Hit the road, Jack!", "Вот увидишь — STERVELL", "Ночь — Губин", "Дожди-пистолеты — Звери", "Где спит твоё сердце — Billy's Band", "Луч солнца золотого", "Вне зоны доступа", "Zombie — Cranberries", "Николай Носков — Снег", "Дайте танк (!) — Мы", "Бумбокс — Вахтёрам", "До скорой встречи — Звери", "Улыбайся — IOWA", "RHCP — Californication", "Maroon 5 — This Love", "Maroon 5 — Wake Up Call", "Fly me to the moon", "Меладзе — Салют, Вера", "Звёзды — Ума2рман", "All of me — John Legend", "Creep — Radiohead", "Stand by me", "Московские окна", "Девушки как звёзды", "Ветер перемен", "Колыбельная медведицы", "Come Together", "Маршрутка — IOWA"],
       "gdrive": "https://drive.google.com/drive/folders/1ka9NYxYV_IWGb20z1ijtbC2sOgzUPPL6"
+    },
+    {
+      "slug": "2025-03-01",
+      "date": "2025-03-01",
+      "date_label": "01 марта 2025",
+      "title": "",
+      "place": "Москва",
+      "status": "past",
+      "cover": "",
+      "photos": [],
+      "performers": "Основной состав (house band).",
+      "songs": ["Hit the road, Jack!", "Вот увидишь — STERVELL", "Дожди-пистолеты — Звери", "Мой рок-н-ролл", "Где спит твоё сердце — Billy's Band", "Луч солнца золотого", "Sunny — Boney M", "Улыбайся — IOWA", "Воздух на сигареты — Максим Свобода", "RHCP — Californication", "Седьмой лепесток", "Fly me to the moon", "Наше лето — Ялта Парус", "All of me — John Legend", "Creep — Radiohead", "Новые люди — Сплин", "Минутка красоты", "Я так соскучился — Порнофильмы", "Скользкие улицы — Би-2 и Brainstorm", "Маршрутка — IOWA"],
+      "gdrive": ""
+    },
+    {
+      "slug": "2024-12-22-novogodniy",
+      "date": "2024-12-22",
+      "date_label": "22 декабря 2024",
+      "title": "Новогодний квартирник",
+      "place": "Москва",
+      "status": "past",
+      "cover": "",
+      "photos": [],
+      "performers": "Основной состав (house band).",
+      "songs": ["Зимний Сон — Алсу", "Звенит январская вьюга", "Let It Snow", "Hit the road, Jack!", "Мой рок-н-ролл", "Николай Носков — Снег", "Дайте танк (!) — Мы", "На другом берегу зимы — Ума2рман и Варвара Визбор", "ABBA — Dancing Queen", "Last Christmas", "Бумбокс — Вахтёрам", "Опять метель — Пугачёва, Орбакайте", "Проститься — Ума2рман", "Я так соскучился — Порнофильмы"],
+      "gdrive": ""
+    },
+    {
+      "slug": "2024-08-17-dr",
+      "date": "2024-08-17",
+      "date_label": "17 августа 2024",
+      "title": "Квартирник на день рождения",
+      "place": "Москва, Красная Роза",
+      "status": "past",
+      "cover": "",
+      "photos": [],
+      "performers": "Основной состав (house band) + гости.",
+      "songs": ["Зимний Сон — Алсу", "Let It Snow", "Hit the road, Jack!", "Вот увидишь — STERVELL", "Ночь — Губин", "Дожди-пистолеты — Звери", "Мой рок-н-ролл", "Где спит твоё сердце — Billy's Band", "Луч солнца золотого", "Sunny — Boney M", "Вне зоны доступа", "Белый снег — Пугачёва", "Wind of Change", "На другом берегу зимы — Ума2рман", "Бумбокс — Вахтёрам", "До скорой встречи — Звери", "Улыбайся — IOWA", "Воздух на сигареты — Максим Свобода", "Fly me to the moon", "Наше лето — Ялта Парус", "Звёзды — Ума2рман", "All of me — John Legend", "Scientist — Coldplay", "Опять метель — Пугачёва, Орбакайте", "Проститься — Ума2рман", "Do I Wanna Know — Arctic Monkeys", "Creep — Radiohead", "Новые люди — Сплин", "Stand by me", "Московские окна", "Девушки как звёзды", "Ветер перемен", "Романы Ремарка", "Хочешь — Земфира", "Колыбельная медведицы", "Come Together", "Забери — Сергей Бабкин", "Понимаешь — Тонева, Артемьев", "Минутка красоты", "Я так соскучился — Порнофильмы", "Скользкие улицы — Би-2 и Brainstorm", "Forever Young — Alphaville", "Маршрутка — IOWA"],
+      "gdrive": ""
     },
     {
       "slug": "2024-02-24-pervyy",
       "date": "2024-02-24",
       "date_label": "24 февраля 2024",
-      "title": "Первый квартирник",
+      "title": "Первый квартирник в ОКО",
       "place": "Москва, БЦ ОКО",
       "status": "past",
       "cover": "https://mariaborukha.github.io/kvartirnik-2/img/ev1_1.jpg",
       "photos": ["https://mariaborukha.github.io/kvartirnik-2/img/ev1_1.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev1_2.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev1_3.jpg"],
-      "songs": [],
+      "performers": "Основной состав (house band).",
+      "songs": ["Зимний Сон — Алсу", "Где спит твоё сердце — Billy's Band", "Белый снег — Пугачёва", "На другом берегу зимы — Ума2рман", "RHCP — Californication", "Звёзды — Ума2рман", "All of me — John Legend", "Scientist — Coldplay", "Опять метель — Пугачёва, Орбакайте", "Проститься — Ума2рман", "Do I Wanna Know — Arctic Monkeys", "Creep — Radiohead"],
       "gdrive": "https://drive.google.com/drive/folders/1xromC_q0TGqPJoq1QwBcUSf_d0vQfuXk"
+    },
+    {
+      "slug": "2022-07-16-first",
+      "date": "2022-07-16",
+      "date_label": "16 июля 2022",
+      "title": "Самый первый квартирник",
+      "place": "Москва, дома у Маши",
+      "status": "past",
+      "cover": "",
+      "photos": [],
+      "performers": "Друзья, друзья друзей и незнакомцы — около 10 человек. Пели вместе под гитару и фортепиано.",
+      "songs": [],
+      "note": "С этого домашнего вечера всё началось. Основу тусовки составили ребята из ВШМ СПбГУ и Яндекса.",
+      "gdrive": ""
     }
   ]
 }

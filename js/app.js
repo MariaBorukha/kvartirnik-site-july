@@ -39,6 +39,17 @@ function driveBtn(url) {
   return `<a href="${esc(url)}" class="btn btn-outline" target="_blank" rel="noopener">📁 Все фото, видео и аудио на Google Диске →</a>`;
 }
 
+function noteBlock(note) {
+  if (!note) return '';
+  return `<div class="event-note reveal">${esc(note)}</div>`;
+}
+
+function performersBlock(performers) {
+  if (!performers) return '';
+  return `<section class="section"><p class="section__label reveal">Кто играл</p>
+    <p class="event-performers reveal">${esc(performers)}</p></section>`;
+}
+
 /* ── Страница ОДНОГО события: работает и для будущего, и для прошедшего ──
    Будущее событие показывает статус/регистрацию; когда оно проходит и в JSON
    появляются фото/песни/ссылка на Диск — та же страница становится архивной. */
@@ -76,6 +87,8 @@ function renderEvent(ev, mount) {
     </div>
     ${ev.cover ? `<div class="event-photo reveal"><img src="${esc(ev.cover)}" alt="" loading="lazy"></div>` : ''}
     <div class="wrap">
+      ${noteBlock(ev.note)}
+      ${performersBlock(ev.performers)}
       ${songsBlock(ev.songs)}
       ${ev.photos && ev.photos.length ? `<section class="section"><p class="section__label reveal">Фотографии</p>${photoGrid(ev.photos)}</section>` : ''}
       ${!upcoming && ev.gdrive ? `<div class="wrap" style="padding:0;margin-top:1rem">${driveBtn(ev.gdrive)}</div>` : ''}
