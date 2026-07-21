@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Событие · Квартирник у Маши Боруха</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav-wrap scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Квартирник <em>у Маши</em></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Меню"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="events.html">Событие</a></li>
+      <li><a href="rules.html">Правила</a></li>
+      <li><a href="playlist.html">Плейлист</a></li>
+      <li><a href="archive.html" aria-current="page">Архив</a></li>
+      <li><a href="team.html">Команда</a></li>
+      <li><a href="finance.html">Финансы</a></li>
+    </ul>
+  </div>
+</nav>
+<main id="app"></main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">Квартирник у Маши Боруха</p>
+      <p class="footer-tag">Место и время, где музыканты-любители играют и поют. Бесплатный проект.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="https://t.me/maybeemoi" target="_blank" rel="noopener">Telegram Маши</a>
+      <a href="finance.html">Поддержать</a>
+      <a href="events.html">Следующий</a>
+      <a href="archive.html">Архив</a>
+      <a href="team.html">Вакансии</a>
+    </nav>
+  </div>
+  <p class="footer-line">© Квартирник у Маши Боруха · Москва</p>
+</footer>
+<script src="js/app.js"></script>
+<script>renderEventById(document.getElementById('app'));</script>
+</body>
+</html>

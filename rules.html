@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Правила · Квартирник у Маши Боруха</title>
+<meta name="description" content="Правила поведения на квартирнике у Маши Боруха.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav-wrap scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Квартирник <em>у Маши</em></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="events.html">Событие</a></li>
+      <li><a href="rules.html" aria-current="page">Правила</a></li>
+      <li><a href="playlist.html">Плейлист</a></li>
+      <li><a href="archive.html">Архив</a></li>
+      <li><a href="team.html">Команда</a></li>
+      <li><a href="finance.html">Финансы</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-head wrap">
+  <p class="section__label reveal">Договор</p>
+  <h1 class="page-title reveal d1"><em>Правила</em></h1>
+  <p class="page-sub reveal d2">Правила поведения в офисе — соблюдаем вместе.</p>
+</div>
+
+<div class="wrap">
+  <div class="rules-grid">
+    <div class="reveal">
+      <h2 class="rules-col-title">Нельзя</h2>
+      <ul class="rules-list">
+        <li>
+          <span class="r-icon">—</span>
+          <span>Мешать работе, если люди работают</span>
+        </li>
+        <li>
+          <span class="r-icon">—</span>
+          <span>Фотографировать маркетные доски, мониторы и записи на бумагах</span>
+        </li>
+        <li>
+          <span class="r-icon">—</span>
+          <span>Фотографировать сотрудников, если они не выступают на квартирнике</span>
+        </li>
+      </ul>
+    </div>
+    <div class="reveal d1">
+      <h2 class="rules-col-title">Можно</h2>
+      <ul class="rules-list">
+        <li>
+          <span class="r-icon">—</span>
+          <span>Фотографировать интерьеры</span>
+        </li>
+        <li>
+          <span class="r-icon">—</span>
+          <span>Оставлять музыкальные инструменты в лучшем состоянии, чем до встречи с вами</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="history-strip">
+  <div class="wrap" style="max-width:800px">
+    <p class="rules-quote reveal" style="color:rgba(253,250,245,.85);padding:0">
+      «И помните: вас всегда снимает скрытая камера.»
+    </p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">Квартирник у Маши Боруха</p>
+      <p class="footer-tag">Место и время, где музыканты-любители играют и поют. Бесплатный проект.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="https://t.me/maybeemoi" target="_blank" rel="noopener">Telegram Маши</a>
+      <a href="finance.html">Поддержать</a>
+      <a href="events.html">Следующий</a>
+      <a href="archive.html">Архив</a>
+      <a href="team.html">Вакансии</a>
+    </nav>
+  </div>
+  <p class="footer-line">© Квартирник у Маши Боруха · Москва</p>
+</footer>
+
+<script>
+const nav=document.getElementById('nav'),toggle=document.getElementById('navToggle'),links=document.getElementById('navLinks');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40);},{passive:true});
+toggle.addEventListener('click',()=>{toggle.classList.toggle('open');links.classList.toggle('open');});
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

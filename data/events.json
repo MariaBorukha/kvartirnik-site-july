@@ -1,0 +1,61 @@
+{
+  "_comment": "ЕДИНЫЙ ИСТОЧНИК ПРАВДЫ. Чтобы добавить новый квартирник — добавь один блок в начало массива events. Смотри PLAYBOOK.md.",
+  "settings": {
+    "telegram": "https://t.me/maybeemoi",
+    "donate": "https://www.tinkoff.ru/cf/5ptRedZWPa4"
+  },
+  "events": [
+    {
+      "slug": "2026-05-tbd",
+      "date": "2026-05-31",
+      "date_label": "?? мая 2026",
+      "title": "",
+      "place": "Москва, БЦ Лотте",
+      "place_note": "адрес появится ближе к мероприятию",
+      "status": "upcoming",
+      "guests": "~40",
+      "entry": "Бесплатно · донат приветствуется",
+      "cover": "https://mariaborukha.github.io/kvartirnik-2/img/perf5.jpg",
+      "photos": [],
+      "songs": [],
+      "gdrive": "",
+      "register_url": ""
+    },
+    {
+      "slug": "2025-04-07",
+      "date": "2025-04-07",
+      "date_label": "07 апреля 2025",
+      "title": "",
+      "place": "Москва, БЦ ОКО",
+      "status": "past",
+      "cover": "https://mariaborukha.github.io/kvartirnik-2/img/ev3_1.jpg",
+      "photos": ["https://mariaborukha.github.io/kvartirnik-2/img/ev3_1.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev3_2.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev3_3.jpg"],
+      "songs": [],
+      "gdrive": "https://drive.google.com/drive/folders/1oM1hvWIbe4rqjJ6Mb9dZ4d0n9gXiyQH5"
+    },
+    {
+      "slug": "2025-03-09-31-vesna",
+      "date": "2025-03-09",
+      "date_label": "09 марта 2025",
+      "title": "31 весна",
+      "place": "Москва, БЦ ОКО",
+      "status": "past",
+      "cover": "https://mariaborukha.github.io/kvartirnik-2/img/ev2_1.jpg",
+      "photos": ["https://mariaborukha.github.io/kvartirnik-2/img/ev2_1.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev2_2.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev2_3.jpg"],
+      "songs": [],
+      "gdrive": "https://drive.google.com/drive/folders/1ka9NYxYV_IWGb20z1ijtbC2sOgzUPPL6"
+    },
+    {
+      "slug": "2024-02-24-pervyy",
+      "date": "2024-02-24",
+      "date_label": "24 февраля 2024",
+      "title": "Первый квартирник",
+      "place": "Москва, БЦ ОКО",
+      "status": "past",
+      "cover": "https://mariaborukha.github.io/kvartirnik-2/img/ev1_1.jpg",
+      "photos": ["https://mariaborukha.github.io/kvartirnik-2/img/ev1_1.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev1_2.jpg", "https://mariaborukha.github.io/kvartirnik-2/img/ev1_3.jpg"],
+      "songs": [],
+      "gdrive": "https://drive.google.com/drive/folders/1xromC_q0TGqPJoq1QwBcUSf_d0vQfuXk"
+    }
+  ]
+}

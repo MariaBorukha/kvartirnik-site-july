@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Финансы · Квартирник у Маши Боруха</title>
+<meta name="description" content="Прозрачный отчёт о расходах и доходах квартирника у Маши Боруха.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav-wrap scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Квартирник <em>у Маши</em></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="events.html">Событие</a></li>
+      <li><a href="rules.html">Правила</a></li>
+      <li><a href="playlist.html">Плейлист</a></li>
+      <li><a href="archive.html">Архив</a></li>
+      <li><a href="team.html">Команда</a></li>
+      <li><a href="finance.html" aria-current="page">Финансы</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-head wrap">
+  <p class="section__label reveal">Прозрачность</p>
+  <h1 class="page-title reveal d1"><em>Финансы</em></h1>
+  <p class="page-sub reveal d2">Отчёт о расходах и доходах.</p>
+</div>
+
+<div class="wrap">
+
+  <div class="finance-intro reveal">
+    Мы рады донатам на аренду и покупку музыкального оборудования. Имена доноров публикуются на <a href="team.html" style="color:var(--wine);text-decoration:underline;text-underline-offset:3px">странице команды</a>.
+  </div>
+
+  <div class="expense-group reveal">
+    <h2 class="expense-group-title">Затраты Маши</h2>
+    <table class="expense-table">
+      <tbody>
+        <tr>
+          <td>Шнуры</td>
+          <td>9 412 ₽</td>
+          <td>2 шнура XLR-XLR, 2 шнура Jack-Jack</td>
+        </tr>
+        <tr>
+          <td>Сайт</td>
+          <td>6 600 ₽</td>
+          <td>Создание сайта, нарезка аудио, добавление ссылок в таблицу</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="total-row">
+      <span class="total-label">Итого</span>
+      <span class="total-amount">16 012 ₽</span>
+    </div>
+  </div>
+
+  <div class="expense-group reveal">
+    <h2 class="expense-group-title">Затраты Саши</h2>
+    <table class="expense-table">
+      <tbody>
+        <tr>
+          <td>Аренда оборудования</td>
+          <td>8 400 ₽</td>
+          <td>30 шнуров XLR + цифровой пульт · залог 20 000 ₽</td>
+        </tr>
+        <tr>
+          <td>Аренда оборудования</td>
+          <td>8 700 ₽</td>
+          <td>30 шнуров XLR + цифровой пульт · залог 20 000 ₽</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="total-row">
+      <span class="total-label">Итого</span>
+      <span class="total-amount">17 100 ₽</span>
+    </div>
+  </div>
+
+  <div class="reveal" style="margin:4rem 0;padding:3rem;background:var(--surface);border-radius:4px;text-align:center">
+    <p style="font-family:var(--f-display);font-size:1.2rem;font-style:italic;margin-bottom:1.5rem;color:var(--smoke)">Полная таблица с расходами, доходами и историей донатов</p>
+    <a href="#" class="btn btn-dark">Открыть таблицу</a>
+  </div>
+
+  <div class="reveal" style="margin:2rem 0 6rem;padding:3rem;background:var(--wine);border-radius:4px;text-align:center">
+    <p style="font-family:var(--f-display);font-size:1.5rem;font-style:italic;color:var(--white);margin-bottom:.5rem">Поддержите квартирник донатом</p>
+    <p style="font-size:.9rem;color:rgba(253,250,245,.65);margin-bottom:2rem;font-weight:300">Деньги идут на аренду оборудования. Ваше имя появится на странице команды.</p>
+    <a href="https://www.tinkoff.ru/cf/5ptRedZWPa4" target="_blank" rel="noopener" class="btn" style="background:var(--white);color:var(--wine);font-weight:500">Поддержать проект</a>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">Квартирник у Маши Боруха</p>
+      <p class="footer-tag">Место и время, где музыканты-любители играют и поют. Бесплатный проект.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="https://t.me/maybeemoi" target="_blank" rel="noopener">Telegram Маши</a>
+      <a href="finance.html">Поддержать</a>
+      <a href="events.html">Следующий</a>
+      <a href="archive.html">Архив</a>
+      <a href="team.html">Вакансии</a>
+    </nav>
+  </div>
+  <p class="footer-line">© Квартирник у Маши Боруха · Москва</p>
+</footer>
+
+<script>
+const nav=document.getElementById('nav'),toggle=document.getElementById('navToggle'),links=document.getElementById('navLinks');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40);},{passive:true});
+toggle.addEventListener('click',()=>{toggle.classList.toggle('open');links.classList.toggle('open');});
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
