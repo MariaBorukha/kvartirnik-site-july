@@ -50,6 +50,13 @@ function performersBlock(performers) {
     <p class="event-performers reveal">${esc(performers)}</p></section>`;
 }
 
+function guestsBlock(guests) {
+  if (!guests || !guests.length) return '';
+  const chips = guests.map(g => `<span class="guest-chip">${esc(g)}</span>`).join('');
+  return `<section class="section"><p class="section__label reveal">Гости — приглашённые группы</p>
+    <div class="guest-cloud reveal">${chips}</div></section>`;
+}
+
 /* ── Страница ОДНОГО события: работает и для будущего, и для прошедшего ──
    Будущее событие показывает статус/регистрацию; когда оно проходит и в JSON
    появляются фото/песни/ссылка на Диск — та же страница становится архивной. */
@@ -88,6 +95,7 @@ function renderEvent(ev, mount) {
     ${ev.cover ? `<div class="event-photo reveal"><img src="${esc(ev.cover)}" alt="" loading="lazy"></div>` : ''}
     <div class="wrap">
       ${noteBlock(ev.note)}
+      ${guestsBlock(ev.guests)}
       ${performersBlock(ev.performers)}
       ${songsBlock(ev.songs)}
       ${ev.photos && ev.photos.length ? `<section class="section"><p class="section__label reveal">Фотографии</p>${photoGrid(ev.photos)}</section>` : ''}
@@ -125,11 +133,12 @@ async function renderArchive(mount) {
   mount.innerHTML = past.map((ev, i) => `
     <article class="archive-entry">
       <a href="event.html?id=${encodeURIComponent(ev.slug)}" class="archive-header reveal">
-        <div class="archive-num">${String(past.length - i).padStart(2, '0')}</div>
+        <div class="archive-num">${String(i + 1).padStart(2, '0')}</div>
         <div class="archive-info">
           <p class="archive-date">${esc(ev.date_label || ev.date)}</p>
           ${ev.title ? `<h2 class="archive-title">${esc(ev.title)}</h2>` : ''}
           <p class="archive-loc">${esc(ev.place)}</p>
+          ${ev.guests && ev.guests.length ? `<p class="archive-guests">✦ Гости: ${ev.guests.map(esc).join(', ')}</p>` : ''}
         </div>
       </a>
       ${photoGrid((ev.photos || []).slice(0, 3))}
